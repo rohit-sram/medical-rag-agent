@@ -7,4 +7,5 @@ ipykernel
 langchain-pinecone
 langchain-openai
 langchain-community
-- e.
+langchain-text-splitters
+langchain-huggingface
