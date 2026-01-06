@@ -1,7 +1,7 @@
 from setuptools import find_packages, setup
 
 setup(
-  name="Medical Agent",
+  name="medical_agent",
   version="0.1.0",
   author="rohitsram",
   author_email="rohitcsdev79@gmail.com ",
