@@ -34,14 +34,15 @@ docsearch = PineconeVectorStore.from_existing_index(
 
 retriever = docsearch.as_retriever(search_type="similarity", search_kwargs={"k":3})
 
-# model = ChatOpenAI(model="gpt-4o")
+model = ChatOpenAI(model="gpt-4o-mini", temperature=0)
 
 OLLAMA_MODEL = os.environ.get("OLLAMA_MODEL", "nemotron-mini:4b")
 
-model = ChatOllama(
+llama_model = ChatOllama(
     model=OLLAMA_MODEL,
     temperature=0
 )
+
 
 prompt = ChatPromptTemplate.from_messages(
     [
